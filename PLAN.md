@@ -1,5 +1,7 @@
 # 📅 The 4-Week Plan
 
+**English** · [Українська](./PLAN.uk.md)
+
 **Goal:** Become comfortable writing real, idiomatic, strictly-typed TypeScript.
 **Assumptions:** You know basic JavaScript (variables, functions, arrays, objects, `if`/`for`, arrow functions, promises at a surface level). You can dedicate **3–4 hours per day**, ~5 study days per week.
 

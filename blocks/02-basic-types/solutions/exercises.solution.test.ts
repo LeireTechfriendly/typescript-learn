@@ -1,12 +1,13 @@
+// Verifies the reference solution. Run with:  npm run test:solutions
 import { describe, it, expect, expectTypeOf } from "vitest";
 import {
   firstAndLast,
   sumAll,
   describeValue,
   makeReadonly,
-} from "../src/exercises";
+} from "./exercises.solution";
 
-describe("Block 02 — Basic Types", () => {
+describe("Block 02 — solution", () => {
   it("firstAndLast returns first and last as a tuple", () => {
     expect(firstAndLast(["a", "b", "c"])).toEqual(["a", "c"]);
     expect(firstAndLast(["solo"])).toEqual(["solo", "solo"]);
@@ -29,14 +30,8 @@ describe("Block 02 — Basic Types", () => {
     expect(makeReadonly([1, 2, 3])).toEqual([1, 2, 3]);
   });
 
-  // Type-level checks: the lesson here is about the *types*, not just the
-  // runtime values. These assertions are verified at compile time.
   it("has the right types", () => {
-    // Pure compile-time checks on the signatures — they don't call the
-    // functions, so they pass independently of the runtime implementation.
-    // A fixed-length tuple, not a plain string[].
     expectTypeOf(firstAndLast).returns.toEqualTypeOf<[string, string]>();
-    // readonly is a compile-time guarantee — a runtime test can't see it.
     expectTypeOf(makeReadonly).returns.toEqualTypeOf<readonly number[]>();
   });
 });

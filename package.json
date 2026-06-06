@@ -1,0 +1,26 @@
+{
+  "name": "typescript-in-a-month",
+  "version": "1.0.0",
+  "description": "Learn core TypeScript in one month with hands-on, test-driven exercises.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:block": "vitest run --dir",
+    "typecheck": "tsc --noEmit",
+    "play": "tsx"
+  },
+  "keywords": [
+    "typescript",
+    "learning",
+    "exercises",
+    "tutorial",
+    "tdd"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

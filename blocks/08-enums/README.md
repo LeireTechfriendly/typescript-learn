@@ -1,5 +1,7 @@
 # Block 08 — Enums
 
+**English** · [Українська](./README.uk.md)
+
 An `enum` gives a set of named constants a single type. TypeScript has numeric and
 string enums — and often a plain **literal union** is the better choice.
 

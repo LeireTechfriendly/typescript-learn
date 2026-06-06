@@ -1,5 +1,7 @@
 # Block 01 — Getting Started
 
+**English** · [Українська](./README.uk.md)
+
 ## What is TypeScript?
 
 TypeScript is JavaScript **with a type system added on top**. You write `.ts` files,

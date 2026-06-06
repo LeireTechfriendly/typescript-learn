@@ -1,5 +1,7 @@
 # Block 05 — Union & Literal Types
 
+**English** · [Українська](./README.uk.md)
+
 Union and literal types are how TypeScript models "one of a fixed set of options" —
 the foundation of safe state machines and discriminated data.
 

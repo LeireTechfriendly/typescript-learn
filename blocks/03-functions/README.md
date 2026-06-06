@@ -1,5 +1,7 @@
 # Block 03 — Functions
 
+**English** · [Українська](./README.uk.md)
+
 Functions are where annotations earn their keep. This block covers typing them
 thoroughly: parameters, returns, optional and default parameters, rest parameters,
 function *type expressions*, and how callbacks get their types for free.

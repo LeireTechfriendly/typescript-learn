@@ -1,5 +1,7 @@
 # Block 10 — Type Assertions & Casting
 
+**English** · [Українська](./README.uk.md)
+
 An assertion tells the compiler "trust me, this value is type T." It changes types at
 **compile time only** — it does no runtime checking. That power cuts both ways.
 

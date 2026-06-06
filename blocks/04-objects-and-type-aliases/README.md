@@ -1,5 +1,7 @@
 # Block 04 — Objects & Type Aliases
 
+**English** · [Українська](./README.uk.md)
+
 How to describe the *shape* of objects and give those shapes reusable names.
 
 ## Object type literals

@@ -1,5 +1,7 @@
 # Block 07 — Classes
 
+**English** · [Українська](./README.uk.md)
+
 TypeScript adds types and access control on top of JavaScript classes.
 
 ## Fields, constructors, access modifiers

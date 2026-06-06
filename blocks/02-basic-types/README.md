@@ -1,5 +1,7 @@
 # Block 02 — Basic Types
 
+**English** · [Українська](./README.uk.md)
+
 A tour of the primitive and collection types you'll use every day.
 
 ## Primitives

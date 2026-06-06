@@ -1,5 +1,7 @@
 # Block 09 — Narrowing
 
+**English** · [Українська](./README.uk.md)
+
 "Narrowing" is how TypeScript reduces a wide type (a union, `unknown`) to a more
 specific one based on checks you write. It's the everyday skill that makes unions safe.
 

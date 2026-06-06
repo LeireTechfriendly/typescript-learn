@@ -1,5 +1,7 @@
 # Block 06 — Interfaces
 
+**English** · [Українська](./README.uk.md)
+
 `interface` is the other main way (besides `type`) to describe the shape of an object.
 It adds a few capabilities `type` doesn't have: `extends` chains and declaration merging.
 

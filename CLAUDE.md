@@ -71,14 +71,16 @@ npm run test:solutions     # the reference solutions are GREEN
 with `Not implemented` — that is correct and expected; the student makes them green.
 Type-level `it("has the right types")` should pass immediately (it checks signatures).
 
-**Exception — type-only blocks (e.g. block 14):** when the exercise is to *write a
-type* (mapped/conditional types), the compiler is the test. The student `exercises.ts`
-ships intentionally-wrong placeholder types, so `npm run typecheck` reports errors
-**localized to that block's `tests/exercises.test.ts`** until the student fixes them —
-this is the intended signal, analogous to a failing runtime test. The matching
-`solutions/` types are correct, so tsc stays clean for everything else. When verifying
-later blocks, filter these known errors:
-`npx tsc --noEmit 2>&1 | grep -v "14-mapped-and-conditional-types/tests"`.
+**Exception — type-only blocks (blocks 14 and 18):** when the exercise is to *write a
+type* (mapped/conditional types in 14) or *write declarations* (a `.d.ts` for an untyped
+`.js` in 18), the compiler is the test. The student source ships intentionally
+incomplete, so `npm run typecheck` reports errors **localized to that block's
+`tests/exercises.test.ts`** until the student fixes them — the intended signal,
+analogous to a failing runtime test. The matching `solutions/` are correct, so tsc stays
+clean everywhere else. When verifying later blocks, filter these known errors:
+`npx tsc --noEmit 2>&1 | grep "error TS" | grep -vE "1(4|8)-[a-z-]+/tests"`.
+(Block 18 also has a real `legacy.js`, so its runtime test passes either way; only the
+types are the exercise.)
 
 ## Config notes (don't regress these)
 

@@ -27,29 +27,27 @@ export interface Profile {
 
 // 1. Return a Car with the given brand and wheels: 4.
 export function makeCar(brand: string): Car {
-  void brand; // remove this line once you use the parameter
   // TODO: return an object satisfying Car
-  throw new Error("Not implemented");
+  return { wheels: 4, brand: brand };
 }
 
 // 2. Return a Logger that prepends "[prefix] " to each message.
 export function createLogger(prefix: string): Logger {
-  void prefix; // remove this line once you use the parameter
   // TODO: return a function (message) => `[${prefix}] ${message}`
-  throw new Error("Not implemented");
+  return (message) => `[${prefix}] ${message}`;
 }
 
 // 3. Return a Plugin named `add-<amount>` whose apply adds `amount` to its input.
 export function makeAdderPlugin(amount: number): Plugin {
-  void amount; // remove this line once you use the parameter
   // TODO: return { name, apply }
-  throw new Error("Not implemented");
+  return {
+    name: `add-${amount}`,
+    apply: (value) => value + amount,
+  };
 }
 
 // 4. Return a Profile (built from the two merged declarations above).
 export function makeProfile(name: string, verified: boolean): Profile {
-  void name;
-  void verified; // remove these lines once you use the parameters
   // TODO: return an object with both merged fields
-  throw new Error("Not implemented");
+  return { name: name, verified: verified };
 }

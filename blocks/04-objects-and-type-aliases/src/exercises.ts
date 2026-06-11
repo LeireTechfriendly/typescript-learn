@@ -24,30 +24,32 @@ export type ResolvedSettings = {
 
 // 1. Build a User object from the given fields.
 export function makeUser(id: number, name: string): User {
-  void id;
-  void name; // remove these lines once you use the parameters
   // TODO: return an object matching the User type
-  throw new Error("Not implemented");
+  return { id, name };
 }
 
 // 2. Merge two configs; values in `override` win over `base`.
 export function mergeConfig(base: Config, override: Config): Config {
-  void base;
-  void override; // remove these lines once you use the parameters
   // TODO: return a new object with base spread first, then override
-  throw new Error("Not implemented");
+  return { ...base, ...override };
 }
 
 // 3. Count how many times each word appears, using an index-signature dictionary.
 export function wordCount(words: string[]): Counts {
-  void words; // remove this line once you use the parameter
   // TODO: build { word: count } over the array
-  throw new Error("Not implemented");
+  const count : Counts = {};
+  for(const word of words)
+  {
+    count[word] = (count[word] ?? 0) + 1;
+  }
+  return count;
 }
 
 // 4. Fill in any missing settings with defaults: theme "light", fontSize 14.
 export function withDefaults(settings: Settings): ResolvedSettings {
-  void settings; // remove this line once you use the parameter
   // TODO: return a ResolvedSettings with no optional/undefined fields
-  throw new Error("Not implemented");
+    return {
+    theme: settings.theme ?? "light",
+    fontSize: settings.fontSize ?? 14,
+  };
 }

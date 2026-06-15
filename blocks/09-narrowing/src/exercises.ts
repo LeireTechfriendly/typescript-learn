@@ -1,6 +1,8 @@
 // Block 09 — Exercises
 // Run tests:  npx vitest blocks/09-narrowing
 
+import { Circle } from "../../07-classes/solutions/exercises.solution";
+
 export type Shape =
   | { kind: "circle"; radius: number }
   | { kind: "square"; size: number }
@@ -16,9 +18,18 @@ export type WithPhone = { phone: string };
 
 // 1. Compute the area of any Shape. Use a switch on `kind` with a `never` default.
 export function area(shape: Shape): number {
-  void shape; // remove this line once you use the parameter
   // TODO: circle -> π r², square -> size², rectangle -> width*height
-  throw new Error("Not implemented");
+  switch(shape.kind)
+  {
+  case "circle":
+  {
+
+  }
+  case "square":
+  {
+
+  }
+  };
 }
 
 // 2. A user-defined type guard: return value is string.
